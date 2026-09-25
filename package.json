@@ -1,0 +1,29 @@
+{
+  "name": "memory-lane",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=18.18"
+  },
+  "scripts": {
+    "dev": "concurrently -n server,web -c blue,magenta \"npm run dev -w @memory-lane/server\" \"npm run dev -w @memory-lane/web\"",
+    "dev:server": "npm run dev -w @memory-lane/server",
+    "dev:web": "npm run dev -w @memory-lane/web",
+    "build": "npm run build -w @memory-lane/shared && npm run build -w @memory-lane/server && npm run build -w @memory-lane/web",
+    "build:server": "npm run build -w @memory-lane/shared && npm run build -w @memory-lane/server",
+    "build:web": "npm run build -w @memory-lane/shared && npm run build -w @memory-lane/web",
+    "start": "npm run start -w @memory-lane/server",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "clean": "rm -rf apps/*/dist packages/*/dist node_modules/.cache"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "typescript": "^5.4.5"
+  }
+}

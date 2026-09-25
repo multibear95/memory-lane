@@ -1,0 +1,4 @@
+# Pins the Node toolchain Railway's Nixpacks builder uses.
+# .nvmrc is also honoured; this file wins if both are present.
+[phases.setup]
+nixPkgs = ["nodejs_20"]
