@@ -5,7 +5,14 @@ type FamilyMember = {
   name: string;
   avatar: string;
   accent: string;
-  note: string;
+  generation: number;
+  relationshipToMarju: string;
+  birthYear?: number | null;
+  ageSep2026?: number | null;
+  motherOrParent1?: string | null;
+  fatherOrParent2?: string | null;
+  partner?: string | null;
+  roleInApp?: string | null;
 };
 
 type MemoryCategory =
@@ -125,8 +132,12 @@ export function HomePage() {
           ...memory,
           category: normalizeMemoryCategory(memory.category),
         }));
+        const validStoredMemories = storedMemories.filter((memory) =>
+          familyMembers.some((member) => member.id === memory.targetId),
+        );
+
         setMembers(familyMembers);
-        setMemories(storedMemories.length > 0 ? storedMemories : normalizedSeedMemories);
+        setMemories(validStoredMemories.length > 0 ? validStoredMemories : normalizedSeedMemories);
 
         const lastProfile = window.localStorage.getItem(CURRENT_PROFILE_KEY);
         const savedProfile = familyMembers.find((member) => member.id === lastProfile) ?? null;
@@ -253,6 +264,7 @@ export function HomePage() {
                   {member.avatar}
                 </span>
                 <span className="profile-name">{member.name}</span>
+                <span className="profile-note">{member.relationshipToMarju}</span>
               </button>
             ))}
           </div>
@@ -387,7 +399,8 @@ export function HomePage() {
                       {member.avatar}
                     </span>
                     <span className="profile-name">{member.name}</span>
-                    <span className="profile-note">{member.note}</span>
+                    <span className="profile-note">{member.relationshipToMarju}</span>
+                    <span className="profile-note muted-line">Generation {member.generation}</span>
                   </button>
                 ))}
               </div>

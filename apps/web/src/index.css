@@ -136,6 +136,11 @@ h1 {
   font-size: 0.8rem;
 }
 
+.muted-line {
+  color: var(--soft);
+  opacity: 0.8;
+}
+
 .panel {
   padding: 1.5rem;
 }

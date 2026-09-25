@@ -1,0 +1,14 @@
+Name,Generation,Relationship to Marju,Birth year,Age (Sep 2026),Mother/Parent 1,Father/Parent 2,Partner,Role in app
+Ene,1,Mother,1957,,,,Kalmer,Storyteller
+Kalmer,1,Father,1958,,,,Ene,Storyteller
+Jaanika,2,Older sister,1984,,Ene,Kalmer,Martin,Storyteller
+Martin,2,Jaanika's partner,1989,,,,Jaanika,Storyteller
+Marju,2,Self,1985,,Ene,Kalmer,,Storyteller
+Liis,2,Younger sister,1988,,Ene,Kalmer,Mathis,Storyteller
+Mathis,2,Liis's husband,1989,,,,Liis,Storyteller
+Tanel,2,Younger brother,1992,,Ene,Kalmer,,Storyteller
+Liv,3,Niece,2020,6,Jaanika,Martin,,Storyteller
+Iris,3,Niece,2022,4,Jaanika,Martin,,Storyteller
+Artur,3,Nephew,2024,2,Jaanika,Martin,,Storyteller
+Lili-Marleen,3,Niece,2014,12,Liis,Mathis,,Storyteller
+Elisabeth,3,Niece,2018,8,Liis,Mathis,,Storyteller
