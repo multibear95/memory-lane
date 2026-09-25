@@ -1,0 +1,38 @@
+[
+  {
+    "id": "seed-grant-1",
+    "targetId": "lucy",
+    "targetName": "Lucy",
+    "authorId": "grant",
+    "authorName": "Grant",
+    "content": "I still remember Lucy bringing the whole family together at Christmas with her old songbook. She had everyone laughing as she sang the chorus from memory, even the cousins who had never heard it before. That night felt like a little piece of our family story came alive.",
+    "createdAt": "2024-01-18T18:30:00.000Z"
+  },
+  {
+    "id": "seed-fred-1",
+    "targetId": "fred",
+    "targetName": "Fred",
+    "authorId": "lucy",
+    "authorName": "Lucy",
+    "content": "Fred was always the practical one, but he also had the softest way of helping everyone feel seen. I still smile when I think about him mending the garden gate and then sitting in the shade with tea, telling us stories about the old neighborhood.",
+    "createdAt": "2024-02-05T10:15:00.000Z"
+  },
+  {
+    "id": "seed-emily-1",
+    "targetId": "emily",
+    "targetName": "Emily",
+    "authorId": "fred",
+    "authorName": "Fred",
+    "content": "Emily has always been the one who noticed the small things. She could tell when a room felt heavy and somehow make it lighter with one kind sentence. Her quiet kindness is the kind of thing people remember for a long time.",
+    "createdAt": "2024-02-20T09:00:00.000Z"
+  },
+  {
+    "id": "seed-lucy-1",
+    "targetId": "grant",
+    "targetName": "Grant",
+    "authorId": "emily",
+    "authorName": "Emily",
+    "content": "Grant always had a way of turning ordinary afternoons into adventures. He would set up treasure hunts in the backyard and make everyone feel like the day was full of hidden surprises. We still talk about those playful afternoons with a smile.",
+    "createdAt": "2024-03-10T15:45:00.000Z"
+  }
+]

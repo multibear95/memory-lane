@@ -1,0 +1,30 @@
+[
+  {
+    "id": "lucy",
+    "name": "Lucy",
+    "avatar": "L",
+    "accent": "#ffd166",
+    "note": "The family storyteller"
+  },
+  {
+    "id": "fred",
+    "name": "Fred",
+    "avatar": "F",
+    "accent": "#7bdff2",
+    "note": "The keeper of family history"
+  },
+  {
+    "id": "emily",
+    "name": "Emily",
+    "avatar": "E",
+    "accent": "#f4a261",
+    "note": "Always asking for the next story"
+  },
+  {
+    "id": "grant",
+    "name": "Grant",
+    "avatar": "G",
+    "accent": "#90be6d",
+    "note": "The one with the best memory for details"
+  }
+]
